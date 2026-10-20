@@ -1,0 +1,316 @@
+{
+  "title": "Reason-integrity review for an estimated external credit score",
+  "case_id": 8193,
+  "explanation_view": "factors",
+  "measurements": {
+    "case_id": 8193,
+    "inputs": {
+      "MSinceOldestTradeOpen": 38,
+      "AverageMInFile": 19,
+      "NumSatisfactoryTrades": 13,
+      "PercentTradesNeverDelq": 93,
+      "MSinceMostRecentDelq": 15,
+      "NumInqLast6M": 1,
+      "NetFractionRevolvingBurden": 82,
+      "NetFractionInstallBurden": 91
+    },
+    "observed_external_score": 58,
+    "original_probability": 0.954655663685682,
+    "original_shapley": {
+      "values": [
+        0.031571921996015447,
+        0.07864328841349487,
+        0.027876107074549978,
+        0.012975808319390084,
+        0.004843597668739871,
+        -0.0017070179420093953,
+        0.09387935960364248,
+        0.019514408570879743,
+        0.1742862253249367
+      ],
+      "diagnostics": {
+        "base": 0.5127719646560421,
+        "residual": -5.551115123125783e-17
+      },
+      "individual": [
+        {
+          "id": "ExternalRiskEstimate",
+          "label": "External risk estimate",
+          "weight": 0.1742862253249367
+        },
+        {
+          "id": "NetFractionRevolvingBurden",
+          "label": "Revolving balance ratio",
+          "weight": 0.09387935960364248
+        },
+        {
+          "id": "AverageMInFile",
+          "label": "Average account age",
+          "weight": 0.07864328841349487
+        },
+        {
+          "id": "MSinceOldestTradeOpen",
+          "label": "Oldest account age",
+          "weight": 0.031571921996015447
+        }
+      ],
+      "grouped": [
+        {
+          "id": "External risk score",
+          "label": "External risk score",
+          "weight": 0.1742862253249367
+        },
+        {
+          "id": "Credit history",
+          "label": "Credit history",
+          "weight": 0.11021521040951032
+        },
+        {
+          "id": "Revolving balances",
+          "label": "Revolving balances",
+          "weight": 0.09387935960364248
+        },
+        {
+          "id": "Repayment history",
+          "label": "Repayment history",
+          "weight": 0.04569551306267994
+        }
+      ]
+    },
+    "approximations": {
+      "additive": {
+        "estimated_external_score": 57.107905160592196,
+        "probability": 0.9534454484312339,
+        "probability_error": 0.0012102152544480882,
+        "values": [
+          0.03605035345522786,
+          0.1308715750198432,
+          0.0168554892484255,
+          0.008992587714686744,
+          0.041209010782488315,
+          -0.005051137284274818,
+          0.17181186411655266,
+          0.024738814617662235
+        ],
+        "diagnostics": {
+          "base": 0.5279668907606222,
+          "residual": 0
+        },
+        "individual": [
+          {
+            "id": "NetFractionRevolvingBurden",
+            "label": "Revolving balance ratio",
+            "weight": 0.17181186411655266
+          },
+          {
+            "id": "AverageMInFile",
+            "label": "Average account age",
+            "weight": 0.1308715750198432
+          },
+          {
+            "id": "MSinceMostRecentDelq",
+            "label": "Time since delinquency",
+            "weight": 0.041209010782488315
+          },
+          {
+            "id": "MSinceOldestTradeOpen",
+            "label": "Oldest account age",
+            "weight": 0.03605035345522786
+          }
+        ],
+        "grouped": [
+          {
+            "id": "Revolving balances",
+            "label": "Revolving balances",
+            "weight": 0.17181186411655266
+          },
+          {
+            "id": "Credit history",
+            "label": "Credit history",
+            "weight": 0.16692192847507106
+          },
+          {
+            "id": "Repayment history",
+            "label": "Repayment history",
+            "weight": 0.06705708774560055
+          },
+          {
+            "id": "Installment balances",
+            "label": "Installment balances",
+            "weight": 0.024738814617662235
+          }
+        ]
+      },
+      "nonlinear": {
+        "estimated_external_score": 58.853467052010565,
+        "probability": 0.954655663685682,
+        "probability_error": 0,
+        "values": [
+          0.03233236198628696,
+          0.18124818970672513,
+          0.017438485722681696,
+          0.012074297417847955,
+          -0.001323912531416938,
+          -0.002409453726910494,
+          0.18349796344173458,
+          0.01946178078508059
+        ],
+        "diagnostics": {
+          "base": 0.5123359508836521,
+          "residual": 2.220446049250313e-16
+        },
+        "individual": [
+          {
+            "id": "NetFractionRevolvingBurden",
+            "label": "Revolving balance ratio",
+            "weight": 0.18349796344173458
+          },
+          {
+            "id": "AverageMInFile",
+            "label": "Average account age",
+            "weight": 0.18124818970672513
+          },
+          {
+            "id": "MSinceOldestTradeOpen",
+            "label": "Oldest account age",
+            "weight": 0.03233236198628696
+          },
+          {
+            "id": "NetFractionInstallBurden",
+            "label": "Installment balance ratio",
+            "weight": 0.01946178078508059
+          }
+        ],
+        "grouped": [
+          {
+            "id": "Credit history",
+            "label": "Credit history",
+            "weight": 0.2135805516930121
+          },
+          {
+            "id": "Revolving balances",
+            "label": "Revolving balances",
+            "weight": 0.18349796344173458
+          },
+          {
+            "id": "Repayment history",
+            "label": "Repayment history",
+            "weight": 0.028188870609112713
+          },
+          {
+            "id": "Installment balances",
+            "label": "Installment balances",
+            "weight": 0.01946178078508059
+          }
+        ]
+      }
+    },
+    "comparison": {
+      "probability_difference": 0.0012102152544480882,
+      "maximum_original_probability_error": 0.0012102152544480882,
+      "individual": {
+        "retention": 0.75,
+        "jaccard": 0.6,
+        "turnover": true,
+        "first_changed": false,
+        "empty": false
+      },
+      "grouped": {
+        "retention": 1,
+        "jaccard": 1,
+        "turnover": false,
+        "first_changed": true,
+        "empty": false
+      },
+      "same_order": false
+    }
+  },
+  "study_metrics": {
+    "additive": {
+      "label": "Additive score approximation",
+      "test_records": 1973,
+      "external_score_mae": 3.848025717689414,
+      "external_score_r2": 0.7645333613478831,
+      "probability_mae": 0.050146878486452696,
+      "probability_error_quantiles": [
+        0.0277760686194648,
+        0.14276865478543,
+        0.18532556609494108,
+        0.2505555535612225
+      ],
+      "unclipped_out_of_training_range": 4
+    },
+    "nonlinear": {
+      "label": "Nonlinear score approximation",
+      "test_records": 1973,
+      "external_score_mae": 3.243338784287528,
+      "external_score_r2": 0.8183807334210851,
+      "probability_mae": 0.043288371094502384,
+      "probability_error_quantiles": [
+        0.021155569730752333,
+        0.12128815208297046,
+        0.16849930628847445,
+        0.2569754378784586
+      ],
+      "unclipped_out_of_training_range": 0
+    }
+  },
+  "local_approximation": [
+    {
+      "seed": 0,
+      "heldout_r2": 0.67807348466593,
+      "heldout_mae": 0.04236905386695145,
+      "point_error": 0.007871730623413398
+    },
+    {
+      "seed": 1,
+      "heldout_r2": 0.6734922365316086,
+      "heldout_mae": 0.04289398575572273,
+      "point_error": 0.005601259048458207
+    },
+    {
+      "seed": 2,
+      "heldout_r2": 0.6885764833781891,
+      "heldout_mae": 0.04258760325474425,
+      "point_error": 0.009949932142146567
+    },
+    {
+      "seed": 3,
+      "heldout_r2": 0.6654455569722126,
+      "heldout_mae": 0.042606436266533085,
+      "point_error": 0.003501015694493237
+    },
+    {
+      "seed": 4,
+      "heldout_r2": 0.6668479026487752,
+      "heldout_mae": 0.042817136012117264,
+      "point_error": 0.0016993469669764893
+    }
+  ],
+  "evidence_status": {
+    "downstream_model_contribution": "measured",
+    "reconstruction_behavior": "measured",
+    "original_provider_reason": "not established",
+    "production_notice_accuracy": "provider / lender records required"
+  },
+  "findings": {
+    "comparison": "The Random Forest predicts 95.5% serious-late-payment risk with the supplied score, 95.3% with the Ridge estimate and 95.5% with the gradient-boosting estimate. The leading individual-factor sets differ between the two estimates. The grouped-factor sets match.",
+    "supported_original_claim": "The external score contributes to the study’s Random Forest prediction relative to 24 reference records.",
+    "supported_approximation_claim": "The reconstructed-system explanations describe the Random Forest using a score estimated by Ridge regression or gradient-boosted trees.",
+    "unestablished_claim": "The inferred credit factors were used to calculate the original external credit-risk score."
+  },
+  "policy_recommendation": "If a consumer-facing reason depends on a material external score, separate what the lender model establishes from what can be supported about the score provider. A reconstruction is useful for testing, but provider-linked reasons or validation records are still needed for claims about the upstream score.",
+  "consumer_advocate_takeaway": "An external provider’s opacity should not leave the applicant with a specific reason that the creditor cannot connect to the decision path actually used.",
+  "request": "Obtain applicable provider reason codes, score/model version, input documentation and validation evidence linking proposed reasons to the original score. For a refusal, obtain the lender’s actual decision rules, reason-mapping version, human assessment and delivered notice.",
+  "limits": [
+    "The original score mechanism and authenticated provider reasons are absent.",
+    "The study uses historical repayment data and does not evaluate actual notices.",
+    "The analysis is exploratory and the forty records are not representative of lending decisions.",
+    "Interventional replacements can violate credit-feature relationships."
+  ],
+  "sources": {
+    "regulation_b": "https://www.consumerfinance.gov/rules-policy/regulations/1002/interp-9/",
+    "finreglab": "https://finreglab.org/research/explainability-and-fairness-in-machine-learning-for-credit-underwriting/",
+    "cfpb_case": "https://business.cch.com/BFLD/CFPB-Supervisory-Highlights-Advanced-Technologies-Special-Edition-Issue-38-Winter-2025-01172025.pdf"
+  }
+}

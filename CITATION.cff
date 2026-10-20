@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or research framing, please cite it."
+title: "From Risk Scores to Reasons"
+type: software
+authors:
+  - family-names: Singh
+    given-names: Maitreyee
+year: 2026
+abstract: "An explanation-assurance workbench for credit decisions that depend on external scores."

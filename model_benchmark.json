@@ -1,0 +1,57 @@
+{
+  "selection": "Highest validation AUC among six predeclared candidates. Only selected candidate evaluated on test. Existing split reused; original eight-feature test score was already known.",
+  "candidates": [
+    {
+      "scope": "all_23",
+      "model": "Logistic regression",
+      "features": 23,
+      "validation_auc": 0.8002866939434103,
+      "validation_brier": 0.1814925221130811
+    },
+    {
+      "scope": "all_23",
+      "model": "Random Forest",
+      "features": 23,
+      "validation_auc": 0.7958617694758421,
+      "validation_brier": 0.18325147185457327
+    },
+    {
+      "scope": "all_23",
+      "model": "Histogram gradient boosting",
+      "features": 23,
+      "validation_auc": 0.7996877855619859,
+      "validation_brier": 0.18175961725094913
+    },
+    {
+      "scope": "all_22_without_external_score",
+      "model": "Logistic regression",
+      "features": 22,
+      "validation_auc": 0.8003638728585423,
+      "validation_brier": 0.18154901586375666
+    },
+    {
+      "scope": "all_22_without_external_score",
+      "model": "Random Forest",
+      "features": 22,
+      "validation_auc": 0.8022233701871229,
+      "validation_brier": 0.18073277856181175
+    },
+    {
+      "scope": "all_22_without_external_score",
+      "model": "Histogram gradient boosting",
+      "features": 22,
+      "validation_auc": 0.8012684097438894,
+      "validation_brier": 0.1805879011073478
+    }
+  ],
+  "selected": {
+    "scope": "all_22_without_external_score",
+    "model": "Random Forest",
+    "features": 22,
+    "validation_auc": 0.8022233701871229,
+    "validation_brier": 0.18073277856181175,
+    "test_auc": 0.7846935417523653,
+    "test_brier": 0.18856521599401835
+  },
+  "audit_status": "Benchmark only. Existing explanation audit still describes the eight/nine-feature Random Forests; explanations have not been rerun for this candidate."
+}
