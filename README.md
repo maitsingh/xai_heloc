@@ -15,7 +15,7 @@ This project studies that problem using the public FICO HELOC dataset and turns 
 ## Live project
 
 - **Workbench:** [Open the live site][(https://maitsingh.github.io/xai_heloc/)
-- **Reproduce the analysis:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ymaitsingh/xai_heloc/blob/main/From_Risk_Scores_to_Reasons_Colab.ipynb)
+- **Reproduce the analysis:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maitsingh/xai_heloc/blob/main/From_Risk_Scores_to_Reasons_Colab.ipynb)
 - **Policy implications:** [Read the policy note](POLICY_RECOMMENDATIONS.md)
 
 ---
@@ -219,4 +219,4 @@ The same reference-record identities are used for the Shapley calculations acros
 
 ### Colab
 
-[Open the reproduction notebook in Colab]((https://colab.research.google.com/github/Ymaitsingh/xai_heloc/blob/main/From_Risk_Scores_to_Reasons_Colab.ipynb))
+[Open the reproduction notebook in Colab]((https://colab.research.google.com/github/maitsingh/xai_heloc/blob/main/From_Risk_Scores_to_Reasons_Colab.ipynb))
